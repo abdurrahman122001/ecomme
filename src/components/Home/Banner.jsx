@@ -65,18 +65,17 @@ export default function Banner({ className, sliders = [] }) {
           </SimpleSlider>
         </div>
       </div>
-      {/* Internal CSS for slider wrappers */}
       <style jsx global>{`
-        .slick-slider, .slick-list, .slick-track, .slick-slide, 
-        .hero-slider-wrapper, .main-wrapper {
-          height: 100% !important;
-          min-height: 100% !important;
-        }
-        /* Remove margin or padding if needed */
-        .slick-slide > div {
-          height: 100% !important;
-        }
-      `}</style>
+  .slick-slider, .slick-list, .slick-track, .slick-slide, 
+  .hero-slider-wrapper, .main-wrapper {
+    height: 100% !important;
+    min-height: 100% !important;
+  }
+  /* Remove margin or padding if needed */
+  .slick-slide > div {
+    height: 100% !important;
+  }
+`}</style>
     </div>
   );
 }
